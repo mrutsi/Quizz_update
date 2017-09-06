@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgcolor"
+    tools:context="com.example.android.quizz_update.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/colorAccent"
+        android:src="@drawable/picture1"
+
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="18dp"
+        android:text="select your Favorate topic"
+        android:textAllCaps="true"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/holo_purple"
+        android:textDirection="inherit"
+        android:textSize="20sp"
+        />
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        >
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="35dp"
+                android:layout_weight="2"
+                android:onClick="Cars"
+                android:tint="#F5F5F5"
+                android:src="@drawable/caricon"
+                />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_marginRight="35dp"
+                android:layout_weight="2"
+                android:tint="#F5F5F5"
+                android:onClick="Mathematics"
+                android:src="@drawable/mathicon"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="35dp"
+                android:layout_weight="2"
+                android:text="cars"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                ></TextView>
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="15dp"
+                android:layout_marginRight="35dp"
+                android:layout_weight="2"
+                android:text="mathematics"
+                android:textAlignment="center"
+                android:textAllCaps="true"/>
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+
+                android:id="@+id/imageView4"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="14dp"
+                android:layout_weight="1"
+                android:tint="#F5F5F5"
+                android:onClick="Computer"
+                android:src="@drawable/socialicon"/>
+
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="0dp"
+                android:layout_height="90dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="14dp"
+                android:layout_weight="1"
+                android:tint="#F5F5F5"
+                android:onClick="politics"
+                android:src="@drawable/poloticsicon"/>
+
+
+
+        </TableRow>
+
+        <TableRow>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="35dp"
+                android:layout_weight="2"
+                android:text="social media"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                ></TextView>
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="15dp"
+                android:layout_marginRight="35dp"
+                android:layout_weight="2"
+                android:text="politics"
+                android:textAlignment="center"
+                android:textAllCaps="true"/>
+        </TableRow>
+    </TableLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    android:orientation="vertical"
+    tools:context="com.example.android.quizz_update.Results"
+android:padding="15dp"
+    android:weightSum="1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+
+    >
+
+    <!--image results results-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/resultspic"
+        android:src="@drawable/picture1"
+        />
+
+    <!--results number of score-->
+        <TextView
+            android:text="your results are 10/20 you passed"
+            android:textColor="#FF5722"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/score_text"
+            />
+<View
+    android:background="#EC407A"
+    android:layout_width="7dip"
+    android:layout_height="2dip">
+    ></View>
+
+    <!--table for answer1___table for answer2-->
+    <TableRow>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/ans1"
+            android:paddingLeft="20dp"
+            />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/pic1"
+            />
+
+        <TextView
+            android:paddingLeft="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ans2"
+            />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/pic2"
+            />
+    </TableRow>
+
+
+
+    <!--table for answer3__table for answer-->
+    <TableRow>
+        <TextView
+            android:paddingLeft="20dp"
+            android:id="@+id/ans3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/pic3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            />
+
+        <TextView
+            android:paddingLeft="60dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/ans4"
+            />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/pic4"
+            />
+    </TableRow>
+
+
+
+
+    <!--table for answer5__-table for answer6-->
+    <TableRow>
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:id="@+id/ans5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <ImageView
+            android:id="@+id/pic5"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/ans6"
+            android:paddingLeft="60dp"
+            />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/pic6"
+            />
+    </TableRow>
+
+</TableLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bcolor"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="menu"
+            android:text="Main Menu"
+    android:textColor="@android:color/holo_red_dark"
+    android:textSize="22sp"
+    android:textStyle="bold"
+    android:visibility="visible"/>
+
+    </LinearLayout>
+
+
+<LinearLayout
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:layout_weight="1"
+android:layout_width="0dp">
+
+<Button
+    android:id="@+id/exit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:text="Exit"
+android:onClick="Dialog"
+    android:textColor="@android:color/holo_red_dark"
+    android:textSize="22sp"
+    android:textStyle="bold"
+    android:visibility="visible"/>
+</LinearLayout>
+
+
+    </LinearLayout>
+    </LinearLayout>
